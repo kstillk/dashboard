@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: min-content min-content;
+    min-height: 100vh;
+}
+
+aside {
+    grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-auto-flow: row;
+    align-content: start;
+    gap: 50px;
+    background-color: #0891b2;
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 15px;
+}
+
+aside a, aside div {
+    display: grid;
+    justify-content: start;
+}
+
+aside a {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+aside div {
+    gap: 30px;
+}
+
+aside div img {
+    padding: 0 0.8rem;
+}
+
+aside li {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.icon {
+    height: 1.6rem;
+    width: auto;
+}
+
+aside .icon {
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(115deg) brightness(108%) contrast(108%);
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content min-content;
+    padding: 15px 5%;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+}
+
+nav > div {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.search {
+    grid-template-columns: min-content auto;
+    gap: 15px;
+}
+
+.search a {
+    margin-top: 7px;
+}
+
+.search input {
+    appearance: none;
+    height: 1.8rem;
+    border-radius: 0.9rem;
+    border: none;
+    background-color: #DCE2EA;
+    padding: 0.1rem 1rem;
+}
+
+.profile {
+    justify-content: end;
+    gap: 15px;
+    padding-right: 15px;
+}
+
+.profile a {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.up {
+    height: 3rem;
+    width: auto;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.greeting {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+.greeting .up {
+    height: 5rem;
+    width: auto;
+}
+
+.greeting p {
+    display: grid;
+}
+
+.greeting #big {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: grid;
+    gap: 15px;
+    padding-right: 15px;
+}
+
+.buttons button {
+    background-color: #0891b2;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    height: 2.4rem;
+    width: 6rem;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+main {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: 30px 5% 30px 30px;
+    gap: 20px;
+    place-items: start;
+}
+
+main > div {
+    display: grid;
+    gap: 15px;
+}
+
+main>div>div {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+main h2 {
+    padding-left: 10px;
+}
+
+main .projects {
+    grid-row: span 2;
+}
+
+main .normcolor {
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0; margin: 0;
+    gap: 15px;
+}
+
+main .normcolor > div {
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 15px;
+    padding: 15px;
+    display: grid;
+    gap: 15px;
+} 
+
+.interactive {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    justify-content: end;
+}
+
+main .announcements > div {
+    display: grid;
+    gap: 15px;
+}
+
+main .announcements > div > div {
+    display: grid;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #0891b2;
+}
+
+main .announcements > div > div:first-of-type {
+    border: none;
+    padding: 0;
+}
+
+main .trending {
+    width: 100%;
+}
+
+main .trending > div {
+    display: grid;
+    gap: 15px;
+}
+
+main .trending > div > div {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    justify-content: start;
+}
+
+main .trending > div > div > div {
+    display: grid;
+    white-space: nowrap;
+    /* gap: 15px; */
+}
+
+.bold {
+    font-weight: 500;
+}
