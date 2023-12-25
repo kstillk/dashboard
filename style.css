@@ -262,3 +262,54 @@ main .trending > div > div > div {
 .bold {
     font-weight: 500;
 }
+
+@media (max-width: 910px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+    }
+
+    aside {
+        padding: 25px;
+    }
+
+    aside > div {
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    }
+
+    nav {
+        grid-template-columns: 1fr 1fr;
+        padding: 25px;
+        justify-content: space-around;
+        gap: 25px;
+    }
+
+    nav .search, nav .buttons {
+        grid-column: span 2;
+    }
+
+    nav .profile {
+        justify-content: start;
+    }
+
+    nav .greeting {
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        gap: 25px;
+    }
+
+    nav .buttons {
+        justify-items: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    aside > div {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+}
