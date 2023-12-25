@@ -237,7 +237,7 @@ main .announcements > div > div:first-of-type {
     padding: 0;
 }
 
-main .trending {
+main .trending, main .announcements {
     width: 100%;
 }
 
